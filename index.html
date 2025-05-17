@@ -47,22 +47,21 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      justify-content: center;
-      max-width: 360px;
-      margin: 0 auto;
+      grid-template-columns: 1fr; /* single column */
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
       position: fixed;
-      bottom: 80px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: auto;
+      bottom: 50%;
+      right: 20px;
+      transform: translateY(50%);
       z-index: 999;
+      width: 70px; /* fixed width for buttons */
+      justify-items: center;
     }
 
     .button {
-      width: 130px;
-      height: 130px;
+      width: 65px;  /* 50% of original 130px */
+      height: 65px; /* 50% of original 130px */
       background: rgba(255, 255, 255, 0.05);
       border-radius: 50%;
       backdrop-filter: blur(12px);
@@ -71,15 +70,17 @@
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       text-decoration: none;
       color: #000;
-      font-size: 16px;
+      font-size: 10px;
       font-weight: bold;
-      padding: 13px 10px 10px; /* less padding so icon + text fit nicely */
+      padding: 6px 5px 5px;
       transition: transform 0.2s ease, background-color 0.3s ease;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       user-select: none;
+      text-align: center;
+      white-space: nowrap;
     }
 
     .button:hover {
@@ -88,8 +89,8 @@
     }
 
     .icon {
-      font-size: 60px;
-      margin-bottom: 8px;
+      font-size: 30px; /* 50% of original 60px */
+      margin-bottom: 4px;
       pointer-events: none;
     }
 
@@ -126,22 +127,22 @@
       }
 
       .grid {
-        grid-template-columns: repeat(2, 1fr);
+        bottom: 50%;
+        right: 10px;
+        width: 55px;
         gap: 15px;
-        bottom: 70px;
-        max-width: 280px;
       }
 
       .button {
-        width: 105px;
-        height: 105px;
-        font-size: 14px;
-        padding: 12px 8px 8px;
+        width: 50px;
+        height: 50px;
+        font-size: 8px;
+        padding: 5px 4px 4px;
       }
 
       .icon {
-        font-size: 48px;
-        margin-bottom: 6px;
+        font-size: 24px;
+        margin-bottom: 3px;
       }
 
       .offer-box {
