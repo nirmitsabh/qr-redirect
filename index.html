@@ -1,42 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vision Automotive Agra</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://github.com/nirmitsabh/qr-redirect/blob/main/Screenshot_2025-05-17-22-46-34-40_c37d74246d9c81aa0bb824b57eaf7062.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      color: black;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    header span {
+      display: block;
+      font-size: 16px;
+      margin-top: 5px;
+      font-weight: normal;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .button {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 20px 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .whatsapp { color: #25D366; }
+    .call { color: #007BFF; }
+    .instagram { color: #E1306C; }
+    .map { color: #34A853; }
+
+    .offer-box {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 15px 25px;
+      margin-top: 50px;
+      border-radius: 15px;
+      font-size: 18px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .button {
+        height: 100px;
+        padding: 15px 5px;
+        font-size: 13px;
+      }
+
+      .icon {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div class="header">
-    <h2>Welcome to Vision Automotive Agra!</h2>
-    <p>विजन ऑटोमोटिव आगरा में आपका स्वागत है!</p>
-    <p>Please choose your option:</p>
+  <header>
+    Welcome to Vision Automotive Agra!
+    <span>विज़न ऑटोमोटिव आगरा में आपका स्वागत है! कृपया एक विकल्प चुनें:</span>
+  </header>
+
+  <div class="grid">
+    <a href="https://wa.me/917900333322" class="button">
+      <i class="fab fa-whatsapp icon whatsapp"></i>
+      WhatsApp
+    </a>
+    <a href="tel:+917900333322" class="button">
+      <i class="fas fa-phone icon call"></i>
+      Call Us
+    </a>
+    <a href="https://instagram.com/lectrix_agra" class="button">
+      <i class="fab fa-instagram icon instagram"></i>
+      Instagram
+    </a>
+    <a href="https://maps.google.com/?q=Vision+Automotive+Agra" class="button">
+      <i class="fas fa-map-marker-alt icon map"></i>
+      Find Us
+    </a>
   </div>
 
-  <div class="content">
-    <div class="button-grid">
-      <div class="action-button">
-        <img src="whatsapp-icon.svg" alt="WhatsApp" />
-        <div>WhatsApp</div>
-      </div>
-      <div class="action-button">
-        <img src="call-icon.svg" alt="Call Us" />
-        <div>Call Us</div>
-      </div>
-      <div class="action-button">
-        <img src="instagram-icon.svg" alt="Instagram" />
-        <div>Instagram</div>
-      </div>
-      <div class="action-button">
-        <img src="map-icon.svg" alt="Find Us" />
-        <div>Find Us</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-banner">
+  <div class="offer-box">
     🎉 Special Offers Coming Soon! Stay tuned! 🎉
   </div>
 </body>
