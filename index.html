@@ -4,155 +4,126 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vision Automotive Agra</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <style>
-  body {
-    background-image: url('https://raw.githubusercontent.com/https://github.com/nirmitsabh/qr-redirect/blob/main/Screenshot_2025-05-17-22-46-34-40_c37d74246d9c81aa0bb824b57eaf7062.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-</style>
-
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      max-width: 960px;
-      margin-bottom: 20px;
-      background-color: white;
-      padding: 10px 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .header h1 {
-      color: red;
-      font-size: 20px;
+    body {
       margin: 0;
-    }
-
-    .offer {
-      font-weight: bold;
-      color: #d00000;
-      font-size: 16px;
-      white-space: nowrap;
-    }
-
-    h2 {
-      font-size: 18px;
-      color: #555;
+      font-family: Arial, sans-serif;
+      background-image: url('https://github.com/nirmitsabh/qr-redirect/blob/main/Screenshot_2025-05-17-22-46-34-40_c37d74246d9c81aa0bb824b57eaf7062.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
       text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
       margin-bottom: 30px;
     }
 
+    table {
+      margin: 0 auto;
+    }
+
+    td {
+      padding: 20px;
+    }
+
     .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 20px;
-      margin: 10px 0;
-      font-size: 18px;
-      background-color: #007bff;
-      color: white;
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 300px;
-      transition: background 0.3s ease;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1.5;
+      padding: 15px 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
     }
 
     .button:hover {
-      background-color: #0056b3;
+      transform: scale(1.05);
     }
 
-    svg {
-      width: 24px;
-      height: 24px;
-      fill: white;
+    .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+      display: block;
     }
 
-    .info-section {
-      margin-top: 30px;
-      text-align: center;
-    }
+    .whatsapp { color: #25D366; }
+    .call { color: #007BFF; }
+    .instagram { color: #E1306C; }
+    .map { color: #34A853; }
 
-    .info-section p {
-      font-size: 16px;
-      margin: 5px 0;
-    }
-
-    .testimonial-section {
-      margin-top: 30px;
-    }
-
-    @media (max-width: 480px) {
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .header h1, .offer {
-        font-size: 16px;
-      }
-
-      .button {
-        font-size: 16px;
-        padding: 12px;
-      }
+    .offer-box {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 15px;
+      font-size: 18px;
     }
   </style>
 </head>
+
 <body>
+  <h1>
+    Welcome to Vision Automotive Agra! Please choose your option:<br />
+    <span style="font-size: 18px;">विज़न ऑटोमोटिव आगरा में आपका स्वागत है! कृपया एक विकल्प चुनें:</span>
+  </h1>
 
-  <div class="header">
-    <h1>Lectrix & Vision Automotive</h1>
-    <div class="offer">🎉 Special Offer: Get ₹2,000 off on bookings this week!</div>
+  <table>
+    <tr>
+      <td>
+        <a href="https://wa.me/919999999999" class="button">
+          <i class="fab fa-whatsapp icon whatsapp"></i>
+          WhatsApp
+        </a>
+      </td>
+      <td>
+        <a href="tel:+919999999999" class="button">
+          <i class="fas fa-phone icon call"></i>
+          Call Us
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://instagram.com/yourhandle" class="button">
+          <i class="fab fa-instagram icon instagram"></i>
+          Instagram
+        </a>
+      </td>
+      <td>
+        <a href="https://maps.google.com/?q=Vision+Automotive+Agra" class="button">
+          <i class="fas fa-map-marker-alt icon map"></i>
+          Find Us
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <div class="offer-box">
+    🎉 Special Offers Coming Soon! Stay tuned! 🎉
   </div>
-
-  <h1>Welcome to Vision Automotive Agra! Please choose your option:</h1>
-  <h2>विज़न ऑटोमोटिव आगरा में आपका स्वागत है! कृपया एक विकल्प चुनें:</h2>
-
-  <!-- Instagram -->
-  <a class="button" href="https://instagram.com/lectrix_agra" target="_blank">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1 1 0 100 2 1 1 0 000-2z"/>
-    </svg>
-    Check Models & Details on Instagram 
-  </a>
-
-  <!-- WhatsApp 1 -->
-  <a class="button" href="https://wa.me/917900333322" target="_blank">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-      <path d="M16 2C8.3 2 2 8.3 2 16c0 2.9.8 5.7 2.4 8.1L2 30l6.1-2.3C10.3 29.2 13.1 30 16 30c7.7 0 14-6.3 14-14S23.7 2 16 2zm0 26c-2.5 0-4.9-.7-7-2l-.5-.3-3.6 1.3 1.2-3.5-.4-.6C5.8 21 5 18.5 5 16c0-6.1 4.9-11 11-11s11 4.9 11 11-4.9 11-11 11zm5.3-8.7c-.3-.2-1.8-.9-2-1s-.5-.2-.7.2c-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.2-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.5.2-.7.2-.2.3-.3.5-.5.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5-.1-.2-.7-1.6-1-2.2-.2-.4-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.3 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.4z"/>
-    </svg>
-    WhatsApp Inquiry By-Pass Showroom
-  </a>
-
-  <!-- WhatsApp 2 with address -->
-  <a class="button" href="https://wa.me/918527000999" target="_blank">
-    📍 WhatsApp Inquiry Shamshabad Road Showroom
-  </a>
-
-  <!-- Call Now -->
-  <a class="button" href="tel:+917900333322">
-    📞 Call Now
-  </a>
-
-  <!-- Google Maps -->
-  <a class="button" href="https://g.co/kgs/t7EtJ79" target="_blank">
-    📍 Find us on Google Maps
-  </a>
-
-  <!-- Testimonials placeholder -->
-  <div class="testimonial-section">
-    <h2>What Our Customers Say</h2>
-    <p>⭐⭐⭐⭐⭐ "Great experience, very helpful team!" - Ravi from Agra</p>
-  </div>
-
 </body>
 </html>
