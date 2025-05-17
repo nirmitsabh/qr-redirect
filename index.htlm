@@ -35,7 +35,7 @@
 </head>
 <body>
   <h1>Welcome! Choose where you'd like to go:</h1>
-  <a class="button" href="https://www.instagram.com/lectrix_agra" target="_blank">Go to Instagram</a>
+  <a class="button" href="https://instagram.com/lectrix_agra" target="_blank">Go to Instagram</a>
   <a class="button" href="https://wa.me/917900333322" target="_blank">Chat on WhatsApp</a>
 </body>
 </html>
