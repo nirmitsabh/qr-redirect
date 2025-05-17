@@ -24,6 +24,9 @@
       text-align: center;
       padding-top: 100px;
       padding-bottom: 60px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -44,6 +47,14 @@
       font-size: 16px;
       margin-top: 5px;
       font-weight: normal;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 100px; /* leave space above offer box */
     }
 
     .grid {
@@ -87,25 +98,25 @@
     .map { color: #34A853; }
 
     .offer-box {
-       position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.75); /* semi-transparent black */
-  color: white;
-  padding: 15px 20px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  font-size: 18px;
-  text-align: center;
-  box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
-  z-index: 998;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 15px 20px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 18px;
+      text-align: center;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
+      z-index: 998;
     }
 
-       @media (max-width: 480px) {
+    @media (max-width: 480px) {
       header {
-        padding: 10px 15px;      /* reduced padding */
-        font-size: 18px;         /* reduced font size */
+        padding: 10px 15px;
+        font-size: 18px;
       }
 
       header span {
@@ -120,13 +131,13 @@
       }
 
       .button {
-        height: 80px;            /* ~50% of original */
-        padding: 10px 5px;       /* reduced padding */
-        font-size: 12px;         /* slightly smaller text */
+        height: 80px;
+        padding: 10px 5px;
+        font-size: 12px;
       }
 
       .icon {
-        font-size: 40px;         /* smaller icon for tighter layout */
+        font-size: 40px;
         margin-bottom: 6px;
       }
 
@@ -144,27 +155,29 @@
     <span>विज़न ऑटोमोटिव आगरा में आपका स्वागत है! कृपया एक विकल्प चुनें:</span>
   </header>
 
-  <div class="grid">
-    <a href="https://wa.me/917900333322" class="button">
-      <i class="fab fa-whatsapp icon whatsapp"></i>
-      WhatsApp
-    </a>
-    <a href="tel:+917900333322" class="button">
-      <i class="fas fa-phone icon call"></i>
-      Call Us
-    </a>
-    <a href="https://instagram.com/lectrix_agra" class="button">
-      <i class="fab fa-instagram icon instagram"></i>
-      Instagram
-    </a>
-    <a href="https://maps.google.com/?q=Vision+Automotive+Agra" class="button">
-      <i class="fas fa-map-marker-alt icon map"></i>
-      Find Us
-    </a>
+  <div class="main-content">
+    <div class="grid">
+      <a href="https://wa.me/917900333322" class="button">
+        <i class="fab fa-whatsapp icon whatsapp"></i>
+        WhatsApp
+      </a>
+      <a href="tel:+917900333322" class="button">
+        <i class="fas fa-phone icon call"></i>
+        Call Us
+      </a>
+      <a href="https://instagram.com/lectrix_agra" class="button">
+        <i class="fab fa-instagram icon instagram"></i>
+        Instagram
+      </a>
+      <a href="https://maps.google.com/?q=Vision+Automotive+Agra" class="button">
+        <i class="fas fa-map-marker-alt icon map"></i>
+        Find Us
+      </a>
+    </div>
   </div>
 
   <div class="offer-box">
-  🎉 Special Offers Coming Soon! Stay tuned! 🎉
-</div>
+    🎉 Special Offers Coming Soon! Stay tuned! 🎉
+  </div>
 </body>
 </html>
