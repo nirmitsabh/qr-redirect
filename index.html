@@ -51,25 +51,23 @@
       grid-template-rows: repeat(4, auto);
       gap: 20px;
       position: fixed;
-      bottom: 140px; /* shifted lower */
-      right: 20px;
+      bottom: 140px;
+      right: 30px; /* moved slightly left */
       transform: none;
       z-index: 999;
-      width: 85px; /* increased size */
+      width: 90px; /* increased */
       justify-items: center;
     }
 
     .button {
-      width: 85px;
-      height: 85px;
-      background: rgba(255, 255, 255, 0.15); /* more whitish */
+      width: 90px;
+      height: 90px;
+      background: #FFFFFF;
+      color: #222; /* dark text */
       border-radius: 50%;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 2px solid rgba(255, 255, 255, 0.35);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 2px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
       text-decoration: none;
-      color: white; /* white text */
       font-size: 13px;
       font-weight: bold;
       padding: 8px 6px 6px;
@@ -85,11 +83,11 @@
 
     .button:hover {
       transform: scale(1.1);
-      background: rgba(255, 255, 255, 0.5);
+      background: #f5f5f5;
     }
 
     .icon {
-      font-size: 39px; /* 30% bigger */
+      font-size: 41px; /* increased 5% */
       margin-bottom: 5px;
       pointer-events: none;
     }
@@ -116,38 +114,22 @@
     }
 
     @media (max-width: 480px) {
-      header {
-        padding: 15px 15px;
-        font-size: 13px;
-      }
-
-      header span {
-        font-size: 14px;
-        margin-top: 3px;
-      }
-
       .grid {
-        bottom: 110px; /* slightly lower on small screens */
-        right: 10px;
-        width: 65px;
+        bottom: 110px;
+        right: 15px; /* prevent crop */
+        width: 72px;
         gap: 15px;
       }
 
       .button {
-        width: 65px;
-        height: 65px;
-        font-size: 10px;
+        width: 72px;
+        height: 72px;
+        font-size: 11px;
         padding: 6px 5px 5px;
-        color: white;
-        background: rgba(255, 255, 255, 0.15);
-      }
-
-      .button:hover {
-        background: rgba(255, 255, 255, 0.5);
       }
 
       .icon {
-        font-size: 28px;
+        font-size: 30px;
         margin-bottom: 3px;
       }
 
