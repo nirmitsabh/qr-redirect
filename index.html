@@ -17,11 +17,29 @@
       margin: 0;
     }
 
-    h1 {
-      color: #1a1a1a;
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 10px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 960px;
+      margin-bottom: 20px;
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      color: red;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .offer {
+      font-weight: bold;
+      color: #d00000;
+      font-size: 16px;
+      white-space: nowrap;
     }
 
     h2 {
@@ -58,9 +76,28 @@
       fill: white;
     }
 
+    .info-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .info-section p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .testimonial-section {
+      margin-top: 30px;
+    }
+
     @media (max-width: 480px) {
-      h1, h2 {
-        font-size: 18px;
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header h1, .offer {
+        font-size: 16px;
       }
 
       .button {
@@ -71,6 +108,11 @@
   </style>
 </head>
 <body>
+
+  <div class="header">
+    <h1>Lectrix & Vision Automotive</h1>
+    <div class="offer">🎉 Special Offer: Get ₹2,000 off on bookings this week!</div>
+  </div>
 
   <h1>Welcome to Vision Automotive Agra! Please choose your option:</h1>
   <h2>विज़न ऑटोमोटिव आगरा में आपका स्वागत है! कृपया एक विकल्प चुनें:</h2>
@@ -83,13 +125,34 @@
     Follow us on Instagram
   </a>
 
-  <!-- WhatsApp -->
+  <!-- WhatsApp 1 -->
   <a class="button" href="https://wa.me/917900333322" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
       <path d="M16 2C8.3 2 2 8.3 2 16c0 2.9.8 5.7 2.4 8.1L2 30l6.1-2.3C10.3 29.2 13.1 30 16 30c7.7 0 14-6.3 14-14S23.7 2 16 2zm0 26c-2.5 0-4.9-.7-7-2l-.5-.3-3.6 1.3 1.2-3.5-.4-.6C5.8 21 5 18.5 5 16c0-6.1 4.9-11 11-11s11 4.9 11 11-4.9 11-11 11zm5.3-8.7c-.3-.2-1.8-.9-2-1s-.5-.2-.7.2c-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.2-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.5.2-.7.2-.2.3-.3.5-.5.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5-.1-.2-.7-1.6-1-2.2-.2-.4-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.3 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.4z"/>
     </svg>
-    Chat on WhatsApp
+    Chat on WhatsApp - General Inquiry
   </a>
+
+  <!-- WhatsApp 2 with address -->
+  <a class="button" href="https://wa.me/918527000999" target="_blank">
+    📍 Chat on WhatsApp - Sales Inquiry (NH2 Bypass, Agra)
+  </a>
+
+  <!-- Call Now -->
+  <a class="button" href="tel:+917900333322">
+    📞 Call Now
+  </a>
+
+  <!-- Google Maps -->
+  <a class="button" href="https://goo.gl/maps/your_location" target="_blank">
+    📍 Find us on Google Maps
+  </a>
+
+  <!-- Testimonials placeholder -->
+  <div class="testimonial-section">
+    <h2>What Our Customers Say</h2>
+    <p>⭐⭐⭐⭐⭐ "Great experience, very helpful team!" - Ravi from Agra</p>
+  </div>
 
 </body>
 </html>
